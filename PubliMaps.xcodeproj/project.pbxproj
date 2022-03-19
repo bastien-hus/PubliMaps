@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4425A8E027E4DA97009B8401 /* BikeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4425A8DF27E4DA97009B8401 /* BikeRow.swift */; };
+		4462258527E4B2FE00D786C0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4462258427E4B2FE00D786C0 /* InfoView.swift */; };
+		4499D39327DF966800551D68 /* StationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499D39227DF966800551D68 /* StationProvider.swift */; };
+		44B0C5B627E39923007934B6 /* InfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0C5B527E39923007934B6 /* InfoProvider.swift */; };
+		44B0C5B827E3A3B1007934B6 /* SlideOverCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0C5B727E3A3B1007934B6 /* SlideOverCard.swift */; };
+		44B0C5BA27E3A40E007934B6 /* Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0C5B927E3A40E007934B6 /* Handle.swift */; };
+		44B0C5BC27E3B00E007934B6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0C5BB27E3B00E007934B6 /* SearchBar.swift */; };
 		44E3CD3C27D9F7C700826512 /* PubliMapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3CD3B27D9F7C700826512 /* PubliMapsApp.swift */; };
 		44E3CD3E27D9F7C700826512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3CD3D27D9F7C700826512 /* ContentView.swift */; };
 		44E3CD4027D9F7C800826512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E3CD3F27D9F7C800826512 /* Assets.xcassets */; };
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4425A8DF27E4DA97009B8401 /* BikeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeRow.swift; sourceTree = "<group>"; };
+		4462258427E4B2FE00D786C0 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		4499D39227DF966800551D68 /* StationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationProvider.swift; sourceTree = "<group>"; };
+		44B0C5B527E39923007934B6 /* InfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProvider.swift; sourceTree = "<group>"; };
+		44B0C5B727E3A3B1007934B6 /* SlideOverCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOverCard.swift; sourceTree = "<group>"; };
+		44B0C5B927E3A40E007934B6 /* Handle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handle.swift; sourceTree = "<group>"; };
+		44B0C5BB27E3B00E007934B6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		44E3CD3827D9F7C700826512 /* PubliMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PubliMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E3CD3B27D9F7C700826512 /* PubliMapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubliMapsApp.swift; sourceTree = "<group>"; };
 		44E3CD3D27D9F7C700826512 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +110,13 @@
 			children = (
 				44E3CD3B27D9F7C700826512 /* PubliMapsApp.swift */,
 				44E3CD3D27D9F7C700826512 /* ContentView.swift */,
+				4499D39227DF966800551D68 /* StationProvider.swift */,
+				44B0C5B527E39923007934B6 /* InfoProvider.swift */,
+				44B0C5B727E3A3B1007934B6 /* SlideOverCard.swift */,
+				44B0C5B927E3A40E007934B6 /* Handle.swift */,
+				44B0C5BB27E3B00E007934B6 /* SearchBar.swift */,
+				4462258427E4B2FE00D786C0 /* InfoView.swift */,
+				4425A8DF27E4DA97009B8401 /* BikeRow.swift */,
 				44E3CD3F27D9F7C800826512 /* Assets.xcassets */,
 				44E3CD4127D9F7C800826512 /* Preview Content */,
 			);
@@ -257,8 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4462258527E4B2FE00D786C0 /* InfoView.swift in Sources */,
+				44B0C5BC27E3B00E007934B6 /* SearchBar.swift in Sources */,
+				44B0C5B627E39923007934B6 /* InfoProvider.swift in Sources */,
 				44E3CD3E27D9F7C700826512 /* ContentView.swift in Sources */,
+				4499D39327DF966800551D68 /* StationProvider.swift in Sources */,
 				44E3CD3C27D9F7C700826512 /* PubliMapsApp.swift in Sources */,
+				44B0C5B827E3A3B1007934B6 /* SlideOverCard.swift in Sources */,
+				4425A8E027E4DA97009B8401 /* BikeRow.swift in Sources */,
+				44B0C5BA27E3A40E007934B6 /* Handle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
