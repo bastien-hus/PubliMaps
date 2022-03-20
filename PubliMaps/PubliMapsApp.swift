@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 import MapKit
 
+let Colors = [Color(.systemGreen), Color(.systemRed), Color(.systemOrange)]
+
 struct stateStruct : Decodable, Equatable {
     let id: Int32
     let name: String
@@ -78,8 +80,8 @@ func getInfo(station: Station) async -> StationInfo {
     let request = URLRequest(url: url)
     do {
         let (data, _) = try await URLSession.shared.data(for: request)
-        print("responded")
         let result = try JSONDecoder().decode(StationInfo.self, from: data)
+//        print(result)
         return result
     } catch let error as LocalizedError  {
         print(error.localizedDescription)

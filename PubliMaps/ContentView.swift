@@ -27,7 +27,7 @@ struct ContentView: View {
                 Map(coordinateRegion: $region, showsUserLocation: true, annotationItems: stationprovider.stations) { station in
                     MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: station.latitude, longitude: station.longitude), anchorPoint: CGPoint(x: 0, y: 0)) {
                             Image(systemName: "bicycle.circle.fill")
-                                .foregroundColor(Color(.systemPurple))
+                            .foregroundColor(Colors[Int(station.state.id) - 1])
                                 .onTapGesture {
                                     currentstation = station
                                     isShowingSheet.toggle()
