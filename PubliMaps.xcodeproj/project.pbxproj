@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4425A8E027E4DA97009B8401 /* BikeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4425A8DF27E4DA97009B8401 /* BikeRow.swift */; };
+		444A012027F8D19A005CFD1F /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A011F27F8D19A005CFD1F /* MapViewModel.swift */; };
 		4462258527E4B2FE00D786C0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4462258427E4B2FE00D786C0 /* InfoView.swift */; };
 		4499D39327DF966800551D68 /* StationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4499D39227DF966800551D68 /* StationProvider.swift */; };
 		44B0C5B627E39923007934B6 /* InfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0C5B527E39923007934B6 /* InfoProvider.swift */; };
-		44B0C5B827E3A3B1007934B6 /* SlideOverCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0C5B727E3A3B1007934B6 /* SlideOverCard.swift */; };
-		44B0C5BA27E3A40E007934B6 /* Handle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0C5B927E3A40E007934B6 /* Handle.swift */; };
 		44B0C5BC27E3B00E007934B6 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B0C5BB27E3B00E007934B6 /* SearchBar.swift */; };
+		44CD53A228007714009ADB37 /* LocalSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CD53A128007714009ADB37 /* LocalSearchService.swift */; };
+		44CD53A428007755009ADB37 /* LocalSearchViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CD53A328007755009ADB37 /* LocalSearchViewData.swift */; };
+		44CD53A628007789009ADB37 /* LocalSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CD53A528007789009ADB37 /* LocalSearchViewModel.swift */; };
+		44CD53AC2800A6BD009ADB37 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CD53AB2800A6BD009ADB37 /* MapView.swift */; };
+		44CD53AE2800AE07009ADB37 /* RoutingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CD53AD2800AE07009ADB37 /* RoutingEngine.swift */; };
 		44E3CD3C27D9F7C700826512 /* PubliMapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3CD3B27D9F7C700826512 /* PubliMapsApp.swift */; };
 		44E3CD3E27D9F7C700826512 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3CD3D27D9F7C700826512 /* ContentView.swift */; };
 		44E3CD4027D9F7C800826512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E3CD3F27D9F7C800826512 /* Assets.xcassets */; };
@@ -42,12 +46,16 @@
 
 /* Begin PBXFileReference section */
 		4425A8DF27E4DA97009B8401 /* BikeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeRow.swift; sourceTree = "<group>"; };
+		444A011F27F8D19A005CFD1F /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		4462258427E4B2FE00D786C0 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		4499D39227DF966800551D68 /* StationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationProvider.swift; sourceTree = "<group>"; };
 		44B0C5B527E39923007934B6 /* InfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoProvider.swift; sourceTree = "<group>"; };
-		44B0C5B727E3A3B1007934B6 /* SlideOverCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOverCard.swift; sourceTree = "<group>"; };
-		44B0C5B927E3A40E007934B6 /* Handle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handle.swift; sourceTree = "<group>"; };
 		44B0C5BB27E3B00E007934B6 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		44CD53A128007714009ADB37 /* LocalSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchService.swift; sourceTree = "<group>"; };
+		44CD53A328007755009ADB37 /* LocalSearchViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchViewData.swift; sourceTree = "<group>"; };
+		44CD53A528007789009ADB37 /* LocalSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchViewModel.swift; sourceTree = "<group>"; };
+		44CD53AB2800A6BD009ADB37 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		44CD53AD2800AE07009ADB37 /* RoutingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingEngine.swift; sourceTree = "<group>"; };
 		44E3CD3827D9F7C700826512 /* PubliMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PubliMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E3CD3B27D9F7C700826512 /* PubliMapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubliMapsApp.swift; sourceTree = "<group>"; };
 		44E3CD3D27D9F7C700826512 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,15 +116,19 @@
 		44E3CD3A27D9F7C700826512 /* PubliMaps */ = {
 			isa = PBXGroup;
 			children = (
+				444A011F27F8D19A005CFD1F /* MapViewModel.swift */,
+				44CD53AB2800A6BD009ADB37 /* MapView.swift */,
 				44E3CD3B27D9F7C700826512 /* PubliMapsApp.swift */,
 				44E3CD3D27D9F7C700826512 /* ContentView.swift */,
 				4499D39227DF966800551D68 /* StationProvider.swift */,
 				44B0C5B527E39923007934B6 /* InfoProvider.swift */,
-				44B0C5B727E3A3B1007934B6 /* SlideOverCard.swift */,
-				44B0C5B927E3A40E007934B6 /* Handle.swift */,
 				44B0C5BB27E3B00E007934B6 /* SearchBar.swift */,
 				4462258427E4B2FE00D786C0 /* InfoView.swift */,
 				4425A8DF27E4DA97009B8401 /* BikeRow.swift */,
+				44CD53A128007714009ADB37 /* LocalSearchService.swift */,
+				44CD53A328007755009ADB37 /* LocalSearchViewData.swift */,
+				44CD53A528007789009ADB37 /* LocalSearchViewModel.swift */,
+				44CD53AD2800AE07009ADB37 /* RoutingEngine.swift */,
 				44E3CD3F27D9F7C800826512 /* Assets.xcassets */,
 				44E3CD4127D9F7C800826512 /* Preview Content */,
 			);
@@ -278,15 +290,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44CD53AE2800AE07009ADB37 /* RoutingEngine.swift in Sources */,
 				4462258527E4B2FE00D786C0 /* InfoView.swift in Sources */,
+				44CD53AC2800A6BD009ADB37 /* MapView.swift in Sources */,
+				444A012027F8D19A005CFD1F /* MapViewModel.swift in Sources */,
 				44B0C5BC27E3B00E007934B6 /* SearchBar.swift in Sources */,
 				44B0C5B627E39923007934B6 /* InfoProvider.swift in Sources */,
+				44CD53A428007755009ADB37 /* LocalSearchViewData.swift in Sources */,
 				44E3CD3E27D9F7C700826512 /* ContentView.swift in Sources */,
 				4499D39327DF966800551D68 /* StationProvider.swift in Sources */,
+				44CD53A628007789009ADB37 /* LocalSearchViewModel.swift in Sources */,
 				44E3CD3C27D9F7C700826512 /* PubliMapsApp.swift in Sources */,
-				44B0C5B827E3A3B1007934B6 /* SlideOverCard.swift in Sources */,
+				44CD53A228007714009ADB37 /* LocalSearchService.swift in Sources */,
 				4425A8E027E4DA97009B8401 /* BikeRow.swift in Sources */,
-				44B0C5BA27E3A40E007934B6 /* Handle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +466,8 @@
 				DEVELOPMENT_TEAM = VBT2V8MP5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to find the nearest station.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -479,6 +497,8 @@
 				DEVELOPMENT_TEAM = VBT2V8MP5G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to find the nearest station.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

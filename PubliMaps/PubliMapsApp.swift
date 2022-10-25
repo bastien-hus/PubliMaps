@@ -21,17 +21,31 @@ struct stateStruct : Decodable, Equatable {
     }
 }
 
-struct Station: Decodable, Equatable, Identifiable {
+struct Station: Decodable, Equatable, Identifiable, CustomStringConvertible {
     let id: Int32
     let latitude: Double
     let longitude: Double
     let state: stateStruct
+    
+    public var description: String { return "\(self.id)"}
     
     init() {
         self.id = 0
         self.latitude = 0
         self.longitude = 0
         self.state = stateStruct()
+    }
+    
+    func getCoordinates() -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
+    }
+    
+    func toLocation() -> CLLocation {
+        return CLLocation(latitude: self.latitude, longitude: self.longitude)
+    }
+    
+    func toString() -> String {
+        return "\(self.id)"
     }
 }
 
@@ -46,7 +60,7 @@ struct biketype: Decodable {
 }
 
 struct Vehicle: Decodable, Identifiable {
-    let ebike_battery_level: Double
+    let ebike_battery_level: Double?
     let id: Int32
     let name: String
     let type: biketype
@@ -70,24 +84,6 @@ struct StationInfo: Decodable {
         self.address = "Some Address"
         self.city = "Some City"
         self.vehicles = []
-    }
-}
-
-@MainActor
-func getInfo(station: Station) async -> StationInfo {
-    print(station.id)
-    let url = URL(string: "https://api.publibike.ch/v1/public/stations/" + String(station.id))!
-    let request = URLRequest(url: url)
-    do {
-        let (data, _) = try await URLSession.shared.data(for: request)
-        let result = try JSONDecoder().decode(StationInfo.self, from: data)
-//        print(result)
-        return result
-    } catch let error as LocalizedError  {
-        print(error.localizedDescription)
-        return StationInfo()
-    } catch {
-        fatalError()
     }
 }
 

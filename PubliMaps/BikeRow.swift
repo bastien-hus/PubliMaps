@@ -13,14 +13,39 @@ struct BikeRow: View {
     var body: some View {
         HStack {
             if bike.type.id == 2 {
-                Text("🔋")
+                if bike.ebike_battery_level ?? 0 >= 80.0 {
+                    Image(systemName: "battery.100")
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(Color.green, Color.primary)
+                } else if bike.ebike_battery_level ?? 0 >= 60.0 {
+                    Image(systemName: "battery.75")
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(Color.green, Color.primary)
+                } else if bike.ebike_battery_level ?? 0 >= 40.0 {
+                    Image(systemName: "battery.50")
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(Color.green, Color.primary)
+                } else if bike.ebike_battery_level ?? 0 >= 20.0 {
+                    Image(systemName: "battery.25")
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(Color.green, Color.primary)
+                } else {
+                    Image(systemName: "battery.0")
+                        .symbolRenderingMode(.palette)
+                        .foregroundStyle(Color.primary)
+                }
             } else {
-                Text("🚲")
+                Image(systemName: "bicycle")
+                    .foregroundColor(Color.accentColor)
             }
             Spacer()
             Text(bike.name)
             Spacer()
-            Text(String(format: "%.0f", bike.ebike_battery_level) + " %")
+            if bike.ebike_battery_level != nil {
+                Text(String(format: "%.0f", bike.ebike_battery_level!) + " %")
+            } else {
+                Text("         ")
+            }
         }.padding()
     }
 }

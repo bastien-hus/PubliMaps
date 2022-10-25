@@ -23,11 +23,15 @@ struct InfoView: View {
                 .multilineTextAlignment(TextAlignment.leading)
             
             List {
-                ForEach(info.vehicles) { section in
+                ForEach(info.vehicles.sorted(by: sortVehicles)) { section in
                     BikeRow(bike: .constant(section))
                 }
             }
         }.frame(maxWidth: .infinity)
+    }
+    
+    private func sortVehicles(v1: Vehicle, v2: Vehicle) -> Bool {
+        return v1.type.id == 2 && (v2.type.id != 2 || (v1.ebike_battery_level ?? 0.0) > (v2.ebike_battery_level ?? 0.0))
     }
 }
 
